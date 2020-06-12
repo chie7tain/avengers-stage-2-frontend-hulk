@@ -607,6 +607,56 @@ margin:10px;
     right:0px;
     height:90vh;
   }
+  /* styles for banner */
+.welcome-text-container{
+  display:flex;
+  max-width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin:auto;
+}
+.line{
+  width:100px;
+  height:2px;
+  background:rgb(243, 90, 25);
+}
+.welcome-heading{
+  color:var(--mainBlack);
+}
+.banner{
+  text-align:center;
+  display:inline-block;
+  padding:2rem;
+  background:var(--mainGrey);
+  transition: var(--mainTransition);
+}
+.banner:hover{
+  background:transparent;
+}
+.banner-title{
+  font-size:3.4rem;
+  text-transform:uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom:3rem;
+  color:var(--mainBlack);
+}
+.banner-btn{
+  padding:1rem 3rem;
+  text-transform:uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background:var(--primaryColor);
+  color:var(--mainBlack);
+  border:1px solid var(--primaryColor);
+  transition:var(--mainTransition);
+  cursor:pointer;
+}
+.banner-btn:hover{
+  background:transparent;
+  color:var(--primaryColor);
+}
+/* end of banner */
+/* ========= */
 }
 
 /* end of mobile styles */
@@ -637,7 +687,7 @@ margin:10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
 
 /* end of styles for hero */
@@ -659,7 +709,6 @@ margin:10px;
   color:var(--mainBlack);
 }
 .banner{
-  position: relative;
   text-align:center;
   display:inline-block;
   padding:2rem;
@@ -675,9 +724,6 @@ margin:10px;
   color:var(--mainBlack);
 }
 .banner-btn{
-  position: absolute;
-  right: 0;
-  bottom:0;
   padding:1rem 3rem;
   text-transform:uppercase;
   letter-spacing: var(--mainSpacing);
@@ -734,7 +780,6 @@ margin:10px;
 /* ======== */
 
   .burger{
-    background:var(--mainBlack);
     width:40px;
     height:40px;
     margin:10px;
@@ -746,8 +791,8 @@ margin:10px;
 
   }
   .line1,.line2,.line3{
-    background:var(--mainWhite);
-    width:25px;
+    background:var(--mainBlack);
+    width:30px;
     height:3px;
     margin:3px;
     transition:var(--mainTransition);
