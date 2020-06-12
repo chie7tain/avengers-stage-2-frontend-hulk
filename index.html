@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EstyHotels | Landing Page</title>
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./styles/desktop.css">
+  <link rel="stylesheet" href="./styles/tablet.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -71,15 +74,15 @@
 <!-- checkin checkout -->
 <div class="availability">
   <form action="" class="form">
-    <button class="check-btn">Check in</button>
-    <button class="check-btn">Check out</button>
-    <div class="input-container">
+    <button class="check-btn check-in">Check in</button>
+    <button class="check-btn check-out">Check out</button>
+    <div class="input-container" id="adult">
       <label class="input-label" for="adult">No: of adults</label>
-      <input class="input" type="number">
+      <input class="input " type="number">
     </div>
-    <div class="input-container">
+    <div class="input-container " id="child">
       <label class="input-label" for="children">no: of children</label>
-      <input class="input" type="number" >
+      <input class="input " type="number" >
     </div>
     <button class="checkavailabitly-btn">Check availability</button>
   </form>
@@ -140,54 +143,71 @@
   </div>
   <div class="facility-grid-container">
     <div class="facility-holder">
+        <div class="facility-description">
+          <h2 class="facility-title">Swimming pool</h2>
+          <p class="facility-text">
+            Beautiful golden blue swimming pool rumored to flow straight from mount olympus itself, a major attraction for our
+            esteemed guests.
+          </p>
+        </div>
       <img src="./assets/pool.png" alt="image of a beautiful blue water swimming pool" class="image-of-facility">
-      <h2 class="facility-title">Swimming pool</h2>
-      <p class="facility-text">
-        Beautiful golden blue swimming pool rumored to flow straight from mount olympus itself, a major attraction for our
-        esteemed guests.
-      </p>
     </div>
 
     <div class="facility-holder">
+        <div class="facility-description">
+          <h2 class="facility-title">Spa</h2>
+          <p class="facility-text">A one of a kind spa center where stress is literally massaged from guests by our professional
+            masseurs.
+          </p>
+        </div>
       <img src="./assets/spa.png" alt="image of woman lying on massage board receiving massage from a female masseur" class="image-of-facility">
-      <h2 class="facility-title">Spa</h2>
-      <p class="facility-text">A one of a kind spa center where stress is literally massaged from guests by our professional
-        masseurs.</p>
     </div>
 
     <div class="facility-holder">
+        <div class="facility-description">
+          <h2 class="facility-title">Restaurant</h2>
+          <p class="facility-text">
+            Our superb Restaurant maned by highly skilled chefs famed for some of the most shockingly
+            delicious discoveries in the world of culinary delights.
+          </p>
+        </div>
       <img src="./assets/restaurant.png" alt="image of a restaurant with plates on tables" class="image-of-facility">
-      <h2 class="facility-title">Restaurant</h2>
-      <p class="facility-text">Our superb Restaurant maned by highly skilled chefs famed for some of the most shockingly
-        delicious discoveries in the world of culinary delights.</p>
     </div>
 
 
     <div class="facility-holder">
+        <div class="facility-description">
+          <h2 class="facility-title">Bar</h2>
+          <p class="facility-text">This is one place where our guests get a taste of some of the most exotic wines and spirits
+            known to man.
+          </p>
+        </div>
       <img src="./assets/bar.png" alt="image of wine and liquor bottles and a high chairs at a bar" class="image-of-facility">
-      <h2 class="facility-title">Bar</h2>
-      <p class="facility-text">This is one place where our guests get a taste of some of the most exotic wines and spirits
-        known to man.</p>
     </div>
 
     <div class="facility-holder">
+        <div class="facility-description">
+          <h2 class="facility-title">Lounge</h2>
+          <p class="facility-text">This special lounge place has seen so many life altering events such as famous wedding
+            proposals such as the when the Prince of monacco proposed on bended knee to his teary eyed bride.</p>
+        </div>
       <img src="./assets/lounge.png" alt="image lovely off white lounge chairs against a backdrop of bay windows overlooking the sea in a lounge" class="image-of-facility">
-      <h2 class="facility-title">Lounge</h2>
-      <p class="facility-text">This special lounge place has seen so many life altering events such as famous wedding
-        proposals such as the when the Prince of monacco proposed on bended knee to his teary eyed bride.</p>
     </div>
 
 
     <div class="facility-holder">
+      <div class="facility-description">
+        <h2 class="facility-title">Meeting room</h2>
+        <p class="facility-text">We can't say how many mega deals have been closed within our in house board meeting room
+          because we don't know.</p>
+      </div>
       <img src="./assets/meeting-room.png" alt="image of a board room with writing materials on a board meeting table with chairs on all sides " class="image-of-facility">
-      <h2 class="facility-title">Meeting room</h2>
-      <p class="facility-text">We can't say how many mega deals have been closed within our in house board meeting room
-        because we don't know.</p>
     </div>
-
   </div>
 
-  <button class="browse-gallery-btn">Browse gallery</button>
+<button class="browse-gallery-btn">Browse gallery</button>
+
+
 </section>
   <!-- end of facilitties section -->
   <!-- contact us section -->
@@ -233,7 +253,7 @@
       <div class="links-container">
         <div class="helpul-link-container">
           <h2>Helpful links</h2>
-          <ul>
+          <ul class="footer-nav">
             <li class="helpful-link"><a href="#rooms">Rooms</a></li>
             <li class="helpful-link"><a href="#">Food & drinks</a></li>
             <li class="helpful-link"><a href="#services">Amenities</a></li>
